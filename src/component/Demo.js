@@ -4,7 +4,7 @@ class Demo extends Component {
     render() {
         return (
             <div>
-                my name mohit
+                <h1>my name mohit</h1>
             </div>
         );
     }
