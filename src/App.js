@@ -3,7 +3,7 @@ import './App.css';
 import Demo from './component/Demo';
     
 
-const Medicine_Data= 
+const Data= 
 [
    {
      id: 101,
@@ -46,6 +46,7 @@ const Medicine_Data=
      status: false
    }
  ];
+
 function App() {
   return (
     <table>
@@ -57,9 +58,18 @@ function App() {
         <th>expiry</th>
         <th>status</th>
       </tr>
+      {
+        Data.map((v, i) => {
+          return(
+          <tr>
+            <td></td>
+          </tr>
+          )
+        })
+      }
     </table>
-    
-  );
+
+  )
 }
 
 export default App;
