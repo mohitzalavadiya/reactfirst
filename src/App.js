@@ -46,23 +46,30 @@ const Data=
      status: false
    }
  ];
+ 
 
 function App() {
   return (
-    <table>
+    <table border="1" cellPadding="2" cellSpacing="0"> 
       <tr>
-        <th>id</th>
-        <th>name</th>
-        <th>quantity</th>
-        <th>price</th>
-        <th>expiry</th>
-        <th>status</th>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Expiry</th>
+        <th>Status</th>
       </tr>
       {
         Data.map((v, i) => {
+          const {id, name, quantity, price, expiry, status} = v;
           return(
           <tr>
-            <td></td>
+            <td>{id}</td>
+            <td>{name}</td>
+            <td>{quantity}</td>
+            <td>{price}</td>
+            <td>{expiry}</td>
+            <td>{status.toString()}</td>
           </tr>
           )
         })
