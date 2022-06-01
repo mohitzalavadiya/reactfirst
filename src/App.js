@@ -3,6 +3,10 @@ import './App.css';
 import Demo from './component/Demo';
     
 
+
+function App() {
+
+  
 const Data= 
 [
    {
@@ -46,9 +50,11 @@ const Data=
      status: false
    }
  ];
- 
+    let fdata = Data.filter((d,i) => d.status=== true && d.expiry >=2022);
+    let ans = fdata.reduce((acc, d, i) => acc + d.price, 0);
+    console.log(ans);
 
-function App() {
+
   return (
     <table border="1" cellPadding="2" cellSpacing="0"> 
       <tr>
@@ -58,24 +64,25 @@ function App() {
         <th>Price</th>
         <th>Expiry</th>
         <th>Status</th>
+        <th>Total</th>
       </tr>
       {
-        Data.map((v, i) => {
+        fdata.map((v, i) => {
           const {id, name, quantity, price, expiry, status} = v;
           return(
-          <tr>
+          <tr key={i}>
             <td>{id}</td>
             <td>{name}</td>
             <td>{quantity}</td>
             <td>{price}</td>
             <td>{expiry}</td>
             <td>{status.toString()}</td>
+            {i===0 ?  <td rowSpan={2}>{ans}</td> : null}
           </tr>
           )
         })
       }
     </table>
-
   )
 }
 
