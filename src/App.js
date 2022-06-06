@@ -3,6 +3,7 @@ import './App.css';
 import Demo from './component/Demo';
 import Cityclass from './container/Cityclass';
 import Cityfun from './container/Cityfun';
+import Countryfun from './container/Countryfun';
 
 
 
@@ -10,8 +11,9 @@ import Cityfun from './container/Cityfun';
 function App() {
   
   return (
-    <Cityclass/>
+    // <Cityclass/>
     // <Cityfun/>
+    <Countryfun/>
   )
 };
 
