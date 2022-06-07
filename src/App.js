@@ -5,6 +5,7 @@ import Cityclass from './container/Cityclass';
 import Cityfun from './container/Cityfun';
 import Countryfun from './container/Countryfun';
 import Time from './container/Time';
+import Timefun from './container/Timefun';
 
 
 
@@ -15,7 +16,8 @@ function App() {
     // <Cityclass/>
     // <Cityfun/>
     // <Countryfun/>
-    <Time/>
+    // <Time/>
+    <Timefun/>
   )
 };
 
