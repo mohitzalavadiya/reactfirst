@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 class Time extends Component {
-
     constructor(props) {
         super(props);
         
@@ -37,6 +36,7 @@ class Time extends Component {
             </div>
         );
     }
+  
 }
 
 export default Time;
