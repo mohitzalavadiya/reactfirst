@@ -7,6 +7,7 @@ import Countryfun from './container/Countryfun';
 import Time from './container/Time';
 import Timefun from './container/Timefun';
 import Counter from './container/Counter';
+import Loading from './container/Loading';
 
 
 
@@ -14,12 +15,7 @@ import Counter from './container/Counter';
 function App() {
   
   return (
-    // <Cityclass/>
-    // <Cityfun/>
-    // <Countryfun/>
-    // <Time/>
-    // <Timefun/>
-    <Counter/>
+    
   )
 };
 
