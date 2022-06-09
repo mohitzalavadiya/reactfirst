@@ -8,6 +8,7 @@ import Time from './container/Time';
 import Timefun from './container/Timefun';
 import Counter from './container/Counter';
 import Loading from './container/Loading';
+import Hoc from './container/Hoc';
 
 
 
@@ -15,7 +16,7 @@ import Loading from './container/Loading';
 function App() {
   
   return (
-    
+    <Hoc/>
   )
 };
 

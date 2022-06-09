@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import Home from './Home';
+import Loading from './Loading';
 
-
+const Loadingwithhome = Loading(Home);
 
 function Hoc(props) {
     const [loading, setLoading] = useState(false)
@@ -14,11 +16,14 @@ function Hoc(props) {
 
     useEffect(() => {
         setLoading(true);
-        setTimeout(() => {setLoading(false), setData(fakedata) } ,2000)
+        setTimeout(() => {setLoading(false); setData(fakedata) } ,2000)
     }, [])
     return (
         <div>
-            
+          < Loadingwithhome
+          loading = {loading}
+          sdata = {data}
+          />  
         </div>
     );
 }
