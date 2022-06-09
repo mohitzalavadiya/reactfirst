@@ -18,7 +18,7 @@ function Timefun(props) {
 
     return (
         <div>
-            <p>{time.toLocaleTimeString()}</p>
+            <p style= {{color: "chocolate", fontSize:"40px", margin:"20px 500px", fontFamily:"sans-serif"}}>{time.toLocaleTimeString()}</p>
         </div>
     );
 }

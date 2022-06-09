@@ -16,8 +16,8 @@ function App() {
     // <Cityclass/>
     // <Cityfun/>
     // <Countryfun/>
-    // <Time/>
-    <Timefun/>
+    <Time/>
+    // <Timefun/>
   )
 };
 

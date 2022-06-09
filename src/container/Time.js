@@ -32,7 +32,7 @@ class Time extends Component {
     render() {
         return (
             <div>
-                <p>{this.state.time.toLocaleTimeString()}</p>
+                <p style= {{color: "navy", fontSize:"40px", margin:"20px 500px", fontFamily:"sans-serif"}}>{this.state.time.toLocaleTimeString()}</p>
             </div>
         );
     }
